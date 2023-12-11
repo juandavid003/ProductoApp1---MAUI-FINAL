@@ -41,7 +41,7 @@ public partial class Carrito : ContentPage
            await _APIService.PostCompra(compra);
         }
 
-        await Navigation.PushAsync(new CompraExitosa(_APIService));
+        await Navigation.PushAsync(new CompraExitosa(_APIService,usuarioLogin));
     }
 
     private async void DeleteProduct(object sender, EventArgs e)

@@ -1,3 +1,4 @@
+using Ejemplo1.Models;
 using ProductoApp1.Services;
 
 namespace ProductoApp1;
@@ -8,18 +9,20 @@ public partial class CompraExitosa : ContentPage
 	{
 		InitializeComponent();
 	}
-    private readonly APIService _APIService;
-    public CompraExitosa(APIService apiservice)
-    {
-        InitializeComponent();
-        _APIService = apiservice;
+	private readonly APIService _APIService;
+	Usuario usuarioLogin;
+	public CompraExitosa(APIService apiservice, Usuario usuario = null)
+	{
+		usuarioLogin = usuario;
+		InitializeComponent();
+		_APIService = apiservice;
 
 
-    }
+	}
 
-    private async void OnClickVolverList(object sender, EventArgs e)
-    {
-
-        await Navigation.PushAsync(new ListaProductos(_APIService));
-    }
+	private async void OnClickVolverList(object sender, EventArgs e)
+	{
+		
+		await Navigation.PushAsync(new ListaProductos(_APIService, usuarioLogin));
+	}
 }
