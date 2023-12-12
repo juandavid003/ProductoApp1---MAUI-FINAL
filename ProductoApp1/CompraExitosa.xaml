@@ -10,7 +10,7 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Image Source="dotnet_bot.png"
+                            <Image Source="diamante.png"
                      HeightRequest="70"
                      WidthRequest="70"/>
                             <StackLayout Orientation="Vertical">
@@ -26,8 +26,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Volver a Lista de Productos"
+        <Button Text="Volver a Lista de Productos"  BackgroundColor="Black" CornerRadius="20" Padding="0"
         FontSize="15"
+        TextColor="White"
         Margin="5"
         Clicked="OnClickVolverList"/>
         

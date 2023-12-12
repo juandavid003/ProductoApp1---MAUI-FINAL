@@ -2,6 +2,83 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProductoApp1.Registrarse"
+             Title="Registrarse"
+             BackgroundColor="White">
+
+
+    <VerticalStackLayout>
+        <Frame HeightRequest="110" VerticalOptions="Start" CornerRadius="0" BackgroundColor="Black" Padding="0">
+            <Label Margin="0,0,0,0"
+                Text="JOYALUX"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="60"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+        </Frame>
+
+
+
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,60,0,0">
+            <Label
+            Text="Brilla con Estilo: Tu Destino de Joyas Virtuales,"
+            TextColor="Black"
+            FontAttributes="Bold,Italic"
+            FontSize="15"
+            HorizontalOptions="Center"
+            TextDecorations="Underline"/>
+
+            <Label
+            Text="donde Cada Tesoro Cuenta."
+            TextColor="Black"
+            FontAttributes="Bold,Italic"
+            FontSize="15"
+            HorizontalOptions="Center"
+            TextDecorations="Underline"/>
+
+            <Frame HeightRequest="50" Margin="0,90,0,0" BorderColor="Black" Padding="0" >
+                <Entry WidthRequest="150" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                   Placeholder="Nombre"
+                   x:Name="Nombre"
+                   TextColor="Black"/>
+            </Frame>
+            <Frame  HeightRequest="50" Margin="0,10,0,0" BorderColor="Black" Padding="0">
+                <Entry WidthRequest="150" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                Placeholder="Correo"
+                x:Name="Correo"
+                TextColor="Black"
+                />
+            </Frame>
+            <Frame  HeightRequest="50" Margin="0,10,0,0" BorderColor="Black" Padding="0">
+                <Entry WidthRequest="150" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                 Placeholder="Contrasena"
+                x:Name="Contrasena"
+                    TextColor="Black"
+                IsPassword="True"/>
+            </Frame>
+            <Button WidthRequest="200" HeightRequest="55" Margin="0,60,0,0" BackgroundColor="Black" CornerRadius="20" Padding="0"
+                Text="Registrarse"
+                TextColor="White"
+                FontAttributes="Bold"
+                Clicked="OnClickRegistrarse"/>
+
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>
+
+
+
+
+
+
+
+
+
+<!--<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductoApp1.Registrarse"
              Title="Registrarse">
 
     <VerticalStackLayout>
@@ -26,4 +103,4 @@
      Margin="5"
      Clicked="OnClickRegistrarse"/>
     </VerticalStackLayout>
-</ContentPage>
+</ContentPage>-->

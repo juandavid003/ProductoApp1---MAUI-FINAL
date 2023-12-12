@@ -5,28 +5,17 @@
              Title="ProductoPage">
     <VerticalStackLayout>
 
-        <HorizontalStackLayout
-            HorizontalOptions="FillAndExpand"
-            BackgroundColor="DarkBlue">
-            <Image Source="dotnet_bot.png"
-                   HeightRequest="50"
-                   WidthRequest="50"
-                   />
-            <Label Text="ProductoApp"
-                   FontSize="30"
-                   TextColor="White"/>
-                
-                
-        </HorizontalStackLayout>
-        <Button Text="Iniciar Sesion"
-                FontSize="15"
-                Clicked="OnClickIniciarSesion"
-                Margin="5"/>
+        <Button WidthRequest="200" HeightRequest="10" Margin="0,30,0,0" BackgroundColor="Black" CornerRadius="20" Padding="0"
+     Text="Iniciar Sesion"
+     TextColor="White"
+     FontAttributes="Bold"
+     Clicked="OnClickIniciarSesion"/>
 
-        <Button Text="Registrarse"
-        FontSize="15"
-        Clicked="OnClickRegistrarse"
-        Margin="5"/>
-     
+        <Button WidthRequest="200" HeightRequest="10" Margin="0,30,0,0" BackgroundColor="Black" CornerRadius="20" Padding="0"
+         Text="Registrarse"
+         TextColor="White"
+         FontAttributes="Bold"
+         Clicked="OnClickRegistrarse"/>
+
     </VerticalStackLayout>
 </ContentPage>

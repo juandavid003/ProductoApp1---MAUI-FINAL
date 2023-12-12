@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProductoApp1.Carrito"
              Title="Carrito">
+
     <VerticalStackLayout>
         <ListView x:Name="MiCarritoList"
       RowHeight="80">
@@ -10,18 +11,20 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
-                            <Image Source="dotnet_bot.png"
+                            <Image Source="diamante.png"
                            HeightRequest="70"
                            WidthRequest="70"/>
                             <StackLayout Orientation="Vertical">
                                 <Label Text="{Binding Nombre}"
                                FontSize="25"
+                               FontAttributes="Bold"
                                WidthRequest="270"/>
                                 <Label Text="{Binding Cantidad}"
                                  FontSize="20"/>
                             </StackLayout>
-                            <Button Text="-"
+                            <Button Text="-" BackgroundColor="Black" CornerRadius="20" Padding="0"
                                   FontSize="15"
+                                  TextColor="White"
                                   Margin="5"
                                   Clicked="DeleteProduct" />
                            
@@ -31,8 +34,9 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-             <Button Text="Comprar"
+        <Button Text="Comprar" BackgroundColor="Black" CornerRadius="20" Padding="0"
               FontSize="15"
+              TextColor="White"
               Margin="5"
               Clicked="OnClickComprar"/>
 
