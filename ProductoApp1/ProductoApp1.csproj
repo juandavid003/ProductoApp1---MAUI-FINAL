@@ -60,28 +60,28 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Carrito.xaml">
+	  <MauiXaml Update="Views\Carrito.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="CompraExitosa.xaml">
+	  <MauiXaml Update="Views\CompraExitosa.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="DetalleProductoPage.xaml">
+	  <MauiXaml Update="Views\DetalleProductoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="IniciarSesion.xaml">
+	  <MauiXaml Update="Views\IniciarSesion.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="IniciarSesionPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ListaProductos.xaml">
+	  <MauiXaml Update="Views\ListaProductos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProductoPage.xaml">
+	  <MauiXaml Update="Views\ProductoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Registrarse.xaml">
+	  <MauiXaml Update="Views\Registrarse.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

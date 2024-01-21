@@ -16,6 +16,7 @@ namespace ProductoApp1
 			InitializeComponent();
 			_APIService = apiservice;
 			MiCarrito = new List<Producto>();
+			
 		}
 
 		protected override void OnAppearing()

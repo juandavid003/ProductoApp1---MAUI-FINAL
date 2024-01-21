@@ -34,8 +34,6 @@ namespace ProductoApp1.Services
             return new Usuario();
         }
 
-
-
         public async Task<Usuario> PostRegistrarse(Usuario usuario)
         {
             try

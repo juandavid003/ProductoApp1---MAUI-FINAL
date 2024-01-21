@@ -16,13 +16,10 @@ public partial class CompraExitosa : ContentPage
 		usuarioLogin = usuario;
 		InitializeComponent();
 		_APIService = apiservice;
-
-
 	}
 
 	private async void OnClickVolverList(object sender, EventArgs e)
-	{
-		
+	{	
 		await Navigation.PushAsync(new ListaProductos(_APIService, usuarioLogin));
 	}
 }

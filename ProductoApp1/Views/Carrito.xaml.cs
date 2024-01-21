@@ -1,5 +1,6 @@
 using Ejemplo1.Models;
 using ProductoApp1.Services;
+using ProductoApp1.ViewModels;
 using System.Collections.ObjectModel;
 
 namespace ProductoApp1;
@@ -38,7 +39,7 @@ public partial class Carrito : ContentPage
                 Nombre = usuarioLogin.Nombre
             };
 
-           await _APIService.PostCompra(compra);
+            ((CarritoViewModel)BindingContext).Comprar(compra);
         }
 
         await Navigation.PushAsync(new CompraExitosa(_APIService,usuarioLogin));

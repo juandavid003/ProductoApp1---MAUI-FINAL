@@ -15,7 +15,9 @@
          Text="Registrarse"
          TextColor="White"
          FontAttributes="Bold"
-         Clicked="OnClickRegistrarse"/>
+         Clicked="OnClickRegistrarse"
+        />
+        
 
     </VerticalStackLayout>
 </ContentPage>

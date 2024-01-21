@@ -1,5 +1,6 @@
 using Ejemplo1.Models;
 using ProductoApp1.Services;
+using ProductoApp1.ViewModels;
 
 namespace ProductoApp1;
 
@@ -17,6 +18,7 @@ public partial class IniciarSesion : ContentPage
     {  
         InitializeComponent();
         _APIService = apiservice;
+        BindingContext = new IniciarSesionViewModel(apiservice);
 
     }
 
